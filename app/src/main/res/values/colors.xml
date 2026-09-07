@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Bhutanese Inspired Palette -->
+    <color name="primary">#FFB300</color> <!-- Bhutanese Gold -->
+    <color name="primary_variant">#FFA000</color>
+    <color name="secondary">#D32F2F</color> <!-- Deep Red -->
+    <color name="secondary_variant">#B71C1C</color>
+
+    <color name="background">#F5F5F5</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="on_primary">#000000</color>
+    <color name="on_secondary">#FFFFFF</color>
+    <color name="on_background">#212121</color>
+    <color name="on_surface">#212121</color>
+
+    <color name="rating_gold">#FFD700</color>
+    <color name="grey_text">#757575</color>
+    <color name="divider">#BDBDBD</color>
+</resources>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/restaurantListFragment">
+
+    <fragment
+        android:id="@+id/restaurantListFragment"
+        android:name="com.example.restaurant_review_app.ui.fragment.RestaurantListFragment"
+        android:label="Restaurants"
+        tools:layout="@layout/fragment_restaurant_list">
+        <action
+            android:id="@+id/action_restaurantListFragment_to_restaurantDetailFragment"
+            app:destination="@id/restaurantDetailFragment" />
+        <action
+            android:id="@+id/action_restaurantListFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/restaurantDetailFragment"
+        android:name="com.example.restaurant_review_app.ui.fragment.RestaurantDetailFragment"
+        android:label="Restaurant Details"
+        tools:layout="@layout/fragment_restaurant_detail">
+        <argument
+            android:name="restaurantId"
+            app:argType="long" />
+        <action
+            android:id="@+id/action_restaurantDetailFragment_to_addReviewFragment"
+            app:destination="@id/addReviewFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/addReviewFragment"
+        android:name="com.example.restaurant_review_app.ui.fragment.AddReviewFragment"
+        android:label="Add Review"
+        tools:layout="@layout/fragment_add_review">
+        <argument
+            android:name="restaurantId"
+            app:argType="long" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.restaurant_review_app.ui.fragment.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile">
+        <action
+            android:id="@+id/action_profileFragment_to_restaurantDetailFragment"
+            app:destination="@id/restaurantDetailFragment" />
+    </fragment>
+</navigation>
